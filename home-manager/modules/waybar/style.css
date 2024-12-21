@@ -1,0 +1,84 @@
+*,
+#workspaces button {
+  margin-left: 1px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-family: "Awesome 6 Free Regular";
+  font-size: 18px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+window#waybar.hidden {
+  opacity: 0;
+}
+
+window {
+  margin-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: none;
+  color: transparent;
+  background: transparent;
+}
+
+#pulseaudio,
+#clock,
+#memory,
+#cpu,
+#tray,
+#custom-sleep,
+#custom-reboot,
+#custom-shutdown,
+#custom-distro,
+#workspaces {
+  color: #f2cdcd;
+  background: #1e1e2e;
+  border-radius: 10px;
+}
+
+#custom-distro {
+  padding-right: 15px;
+  color: #1e1e2e;
+  background: linear-gradient(to bottom right, #f5e0dc, #f5c2e7, #eba0ac);
+}
+
+#custom-sleep,
+#custom-reboot,
+#custom-shutdown {
+  padding-right: 15px;
+}
+
+#custom-sleep {
+  font-weight: bold;
+}
+
+#workspaces {
+  padding: 0;
+  padding-left: 1ex;
+  padding-right: 1ex;
+}
+
+#workspaces button {
+  all: initial;
+  border-radius: inherit;
+  padding: 0;
+}
+
+#workspaces button.active {
+  color: #1e1e2e;
+  background: linear-gradient(to bottom right, #f5e0dc, #f5c2e7, #eba0ac);
+}
+
+#workspaces button:hover {
+  background: linear-gradient(to bottom right, #f5e0dc, #f5c2e7, #eba0ac);
+}
+
+#workspaces button.urgent {
+  background: linear-gradient(to bottom right, #f5e0dc, #eba0ac, #f38ba8);
+}

@@ -1,0 +1,20 @@
+{
+  imports = [
+    ./btop
+    ./fastfetch
+    ./hyprland
+    ./kitty
+    ./nvim
+    ./zsh
+    ./bat.nix
+    ./cava.nix
+    ./desktop-entries.nix
+    ./dunst.nix
+    ./eza.nix
+    ./firefox.nix
+    ./git.nix
+    ./rofi.nix
+    ./waybar
+    ./yazi.nix
+  ];
+}
