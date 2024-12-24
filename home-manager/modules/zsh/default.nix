@@ -3,20 +3,24 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    syntaxHighlighting.enable = true;
-    autosuggestion.enable = true;
 
+    autosuggestion.enable = true;
     history.size = 1000000;
-    shellAliases = {
-      clear = "printf '\\033[2J\\033[3J\\033[1;1H'";
-      cat = "bat";
-    };
+    syntaxHighlighting.enable = true;
+
     initExtra = ''
       [[ ! -f ${./p10k.zsh} ]] || source ${./p10k.zsh}
       eval "$(zoxide init --cmd cd zsh)"
       export PATH="$HOME/.cargo/bin:$PATH"
       fastfetch
     '';
+
+    oh-my-zsh = {
+      enable = true;
+      plugins = [
+        "git"
+      ];
+    };
 
     plugins = [
       {
@@ -25,11 +29,10 @@
         file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
       }
     ];
-    oh-my-zsh = {
-      enable = true;
-      plugins = [
-        "git"
-      ];
+
+    shellAliases = {
+      clear = "printf '\\033[2J\\033[3J\\033[1;1H'";
+      cat = "bat";
     };
   };
 }

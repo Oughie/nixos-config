@@ -33,7 +33,7 @@ return {
 
         dashboard.section.header.opts = {
             position = 'center',
-            hl = 'rustLifetime',
+            hl = 'String',
         }
 
         dashboard.section.buttons.val = {

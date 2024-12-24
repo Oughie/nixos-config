@@ -2,7 +2,7 @@
 
 [![Stars](https://img.shields.io/github/stars/Oughie/nixos-config)](https://github.com/Oughie/nixos-config/stargazers)
 
-Personal configuration for [Hyprland](https://hyprland.org/) on NixOS.
+Personal configuration for [Hyprland](https://hyprland.org/) on NixOS 25.05 (Warbler).
 
 ![Screenshot](public/presentation.png)
 

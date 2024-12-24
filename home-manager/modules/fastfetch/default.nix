@@ -3,11 +3,11 @@
     enable = true;
     settings = {
       "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
-      logo.source = ./icon.png;
       display = {
         color = "magenta";
         separator = "    ";
       };
+      logo.source = ./icon.png;
       modules = [
         {
           type = "custom";
@@ -91,7 +91,6 @@
           type = "custom";
           format = " {#30}⬤ {#90}⬤ {#31}⬤ {#91}⬤ {#32}⬤ {#92}⬤ {#33}⬤ {#93}⬤ {#34}⬤ {#94}⬤ {#35}⬤ {#95}⬤ {#36}⬤ {#96}⬤ {#37}⬤ {#97}⬤ ";
         }
-        # ⬤
       ];
     };
   };

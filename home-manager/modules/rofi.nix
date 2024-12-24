@@ -18,6 +18,7 @@ in
         show-icons = true;
         icon-theme = "Breeze-Dark";
       };
+
       "*" = {
         "bg-col" = mkLiteral "#313244";
         "bg-col-light" = mkLiteral "#313244";

@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  programs.home-manager.enable = true;
   imports = [
     ./modules
   ];
@@ -8,6 +9,7 @@
     username = "luma";
     homeDirectory = "/home/luma";
     stateVersion = "23.11";
+
     pointerCursor = {
       gtk.enable = true;
       package = pkgs.catppuccin-cursors.mochaFlamingo;
@@ -16,5 +18,4 @@
     };
   };
 
-  programs.home-manager.enable = true;
 }

@@ -1,61 +1,80 @@
 { pkgs, ... }:
 {
   nixpkgs.config.allowUnfree = true;
-
   environment.systemPackages = with pkgs; [
-    usbutils
-    udisks
-    udiskie
-    prettierd
-    openrgb
-    busybox
-
-    bun
-    nodejs_22
-
-    dhcpcd
-    android-tools
+    # Applications
     prismlauncher
+    vlc
+    kitty
+    openrgb
+    sxiv
+    discord
+    libreoffice
+
+    # Development
+
+    # - Java
+    openjdk
+    maven
+    google-java-format
+    jdt-language-server
+
+    # - Python
     python3
     isort
     python312Packages.black
     python312Packages.python-lsp-server
     python312Packages.graphviz
 
-    openjdk
-    maven
-    jdt-language-server
-    google-java-format
+    # - Lua
     stylua
     lua-language-server
+
+    # - Nix
     nil
     nixfmt-rfc-style
-    rustup
+
+    # - C
     clang
-    wf-recorder
+
+    # - Rust
+    rustup
+
+    # - Js/Ts
+    prettierd
     typescript-language-server
-    vlc
-    sxiv
-    ripgrep
+
+    # Utils
+    dhcpcd
     fzf
-    kitty
+    gtk3
+    home-manager
+    libinput
+    libnotify
+    pipewire
+    ripgrep
+    swayidle
     swww
-    hyprpicker
-    hyprshot
-    catppuccin-cursors.mochaFlamingo
+    udiskie
+    udisks
+    unzip
+    usbutils
+    wf-recorder
+    zoxide
+
+    # Desktop
+
+    # - Clipboard
     cliphist
     wl-clipboard
-    zoxide
-    pipewire
-    home-manager
-    gtk3
-    xwayland
-    libnotify
-    libinput
-    discord
-    libreoffice
-    unzip
-    swayidle
+
+    # - Hyprland
+
+    catppuccin-cursors.mochaFlamingo
+    hyprpicker
+    hyprshot
+
+    # Display Manager
     (catppuccin-sddm.override {
       flavor = "mocha";
       font = "Noto Sans";

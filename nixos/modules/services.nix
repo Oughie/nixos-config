@@ -10,10 +10,9 @@
       xkb.variant = "nodeadkeys";
       excludePackages = [ pkgs.xterm ];
     };
-    desktopManager.cosmic.enable = true;
     hardware.openrgb.enable = true;
     displayManager = {
-      defaultSession = "hyprland";
+      defaultSession = "hyprland-uwsm";
       sddm = {
         enable = true;
         theme = "catppuccin-mocha";

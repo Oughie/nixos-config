@@ -25,7 +25,7 @@
       ];
 
       "custom/distro" = {
-        "format" = "<span font='Hack Nerd Font' size='medium'></span>";
+        format = "<span font='Hack Nerd Font' size='medium'></span>";
         tooltip = false;
       };
       "hyprland/workspaces" = {

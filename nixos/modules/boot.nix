@@ -8,11 +8,19 @@
 
     loader = {
       timeout = 10;
+
+      efi = {
+        canTouchEfiVariables = true;
+        efiSysMountPoint = "/boot";
+      };
+
       grub = {
         enable = true;
+
         device = "nodev";
         efiSupport = true;
         useOSProber = false;
+
         theme =
           pkgs.fetchFromGitHub {
             owner = "catppuccin";
@@ -21,6 +29,7 @@
             sha256 = "0rih0ra7jw48zpxrqwwrw1v0xay7h9727445wfbnrz6xwrcwbibv";
           }
           + "/src/catppuccin-mocha-grub-theme/";
+
         extraEntries = ''
           if [ "$grub_platform" = "efi" ]; then
               fwsetup --is-supported
@@ -36,10 +45,7 @@
           }
         '';
       };
-      efi = {
-        canTouchEfiVariables = true;
-        efiSysMountPoint = "/boot";
-      };
+
     };
   };
 }
