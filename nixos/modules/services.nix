@@ -43,7 +43,7 @@
     dbus.enable = true;
     printing = {
       enable = true;
-      drivers = [ pkgs.hplip ];
+      # TODO drivers = [ pkgs.hplip ];
     };
   };
 }
