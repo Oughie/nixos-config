@@ -1,11 +1,5 @@
-{ pkgs, ... }:
 {
   programs.waybar = {
-    package = (
-      pkgs.waybar.overrideAttrs (oldAttrs: {
-        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
-      })
-    );
     enable = true;
     settings.mainBar = {
       layer = "top";

@@ -2,9 +2,7 @@
 {
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
-    # extraModulePackages = [ config.boot.kernelPackages.ddcci-driver ];
     kernelParams = [ "mem_sleep_default=deep" ];
-    kernelModules = [ "i2c-dev" ];
 
     loader = {
       timeout = 10;

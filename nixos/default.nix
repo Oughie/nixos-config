@@ -1,4 +1,3 @@
-{ ... }:
 {
   imports = [
     ./hardware-configuration.nix

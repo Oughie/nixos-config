@@ -5,6 +5,7 @@
     ./hyprland
     ./kitty
     ./nvim
+    ./waybar
     ./zsh
     ./bat.nix
     ./cava.nix
@@ -14,7 +15,6 @@
     ./firefox.nix
     ./git.nix
     ./rofi.nix
-    ./waybar
     ./yazi.nix
   ];
 }

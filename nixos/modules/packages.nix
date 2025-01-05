@@ -6,7 +6,6 @@
     prismlauncher
     vlc
     kitty
-    openrgb
     sxiv
     discord
     libreoffice
@@ -40,7 +39,7 @@
     # - Rust
     rustup
 
-    # - Js/Ts
+    # - JavaScript / TypeScript
     prettierd
     typescript-language-server
 

@@ -17,7 +17,6 @@
   };
 
   hardware = {
-    i2c.enable = true;
     printers.ensurePrinters = [
       {
         name = "DeskJet_2700";
@@ -40,7 +39,6 @@
     extraGroups = [
       "networkmanager"
       "wheel"
-      "i2c"
       "lp"
     ];
     shell = pkgs.zsh;

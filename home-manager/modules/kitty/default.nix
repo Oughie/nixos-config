@@ -1,4 +1,3 @@
-{ ... }:
 {
   nixpkgs.overlays = [
     (final: prev: {
@@ -14,14 +13,10 @@
   ];
   programs.kitty = {
     enable = true;
-    keybindings = {
-      "ctrl+shift+f" =
-        "launch --type=overlay --stdin-source=@screen_scrollback fzf --no-sort --no-mouse --exact -i";
-    };
     settings = {
+      enable_audio_bell = false;
       bold_font = "JetBrainsMono Nerd Font Mono Extra Bold";
       bold_italic_font = "JetBrainsMono Nerd Font Mono Extra Bold Italic";
-      enable_audio_bell = false;
       font_family = "JetBrainsMono Nerd Font Mono";
     };
     themeFile = "Catppuccin-Mocha";

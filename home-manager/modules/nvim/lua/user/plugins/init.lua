@@ -1,5 +1,5 @@
 return {
-    'tikhomirov/vim-glsl',
+    'fcancelinha/nordern.nvim',
     require 'user.plugins.alpha',
     require 'user.plugins.autopairs',
     require 'user.plugins.bufferline',

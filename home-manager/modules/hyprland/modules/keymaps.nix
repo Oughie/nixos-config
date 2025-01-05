@@ -30,9 +30,9 @@
       "SUPER SHIFT, 4, movetoworkspace, 4"
       "SUPER SHIFT, 5, movetoworkspace, 5"
 
-      "SUPER, D, exec, sh /home/luma/Configuration/home-manager/modules/hyprland/scripts/rofi.sh"
-      "SUPER SHIFT, S, exec, sh /home/luma/Configuration/home-manager/modules/hyprland/scripts/screenshot.sh"
-      "SUPER SHIFT, C, exec, sh /home/luma/Configuration/home-manager/modules/hyprland/scripts/color_picker.sh"
+      "SUPER, D, exec, sh ~/Configuration/home-manager/modules/hyprland/scripts/rofi.sh"
+      "SUPER SHIFT, S, exec, sh ~/Configuration/home-manager/modules/hyprland/scripts/screenshot.sh"
+      "SUPER SHIFT, C, exec, sh ~/Configuration/home-manager/modules/hyprland/scripts/color_picker.sh"
     ];
 
     binde = [
