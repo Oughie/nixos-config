@@ -46,20 +46,22 @@
     # Utils
     dhcpcd
     fzf
-    gtk3
     home-manager
     libinput
     libnotify
     pipewire
     ripgrep
     swayidle
-    swww
     udiskie
     udisks
-    unzip
     usbutils
     wf-recorder
     zoxide
+
+    # - Compression
+    gnutar
+    unzip
+    zip
 
     # Desktop
 
@@ -72,6 +74,7 @@
     catppuccin-cursors.mochaFlamingo
     hyprpicker
     hyprshot
+    swww
 
     # Display Manager
     (catppuccin-sddm.override {
