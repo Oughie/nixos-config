@@ -8,7 +8,7 @@ return {
     config = function()
         require('nvim-tree').setup {
             filters = {
-                custom = { '*.git', '*.class' },
+                custom = { '*.git', '*.class', '*.lock', '*.lockb', 'package.json', 'target', 'node_modules' },
             },
             update_focused_file = {
                 enable = true,

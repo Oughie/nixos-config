@@ -8,6 +8,7 @@
     ./input.nix
     ./keymaps.nix
     ./misc.nix
+    ./monitor.nix
     ./rules.nix
   ];
 }

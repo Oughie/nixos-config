@@ -4,9 +4,8 @@
 
 cd $HOME/Configuration/home-manager/wallpapers/
 
-while :
-do
+while true; do
     file="$(ls *.jpg *.png | sort -R | tail -1)"
     swww img "$file" -t=wipe --transition-angle 15
-    sleep 300;
+    sleep 300
 done

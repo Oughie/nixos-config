@@ -35,7 +35,7 @@
           }
           {
             label = "NixOS & Nixpkgs";
-            url = "https://search.nixos.org/options?";
+            url = "https://search.nixos.org/packages?";
           }
           {
             label = "Home-Manager Options";

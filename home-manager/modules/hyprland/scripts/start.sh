@@ -1,7 +1,12 @@
 #!/bin/bash
 
+# Start daemons on startup
+
+SCRIPTS=$HOME/Configuration/home-manager/modules/hyprland/scripts
+
+dunst &
+udiskie &
 swww-daemon &
 waybar &
-dunst &
-sh ~/Configuration/home-manager/modules/hyprland/scripts/slideshow.sh &
-sh ~/Configuration/home-manager/modules/hyprland/scripts/power_management.sh &
+sh $SCRIPTS/slideshow.sh &
+sh $SCRIPTS/power-management.sh &

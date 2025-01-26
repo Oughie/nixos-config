@@ -10,9 +10,11 @@ return {
             },
             defaults = {
                 file_ignore_patterns = {
-                    'Cargo.lock',
+                    '%.lock',
                     'build/',
                     'node_modules',
+                    'package.json',
+                    'gen',
                     'target',
                     '%.svg',
                     'package%-lock%.json',
