@@ -32,7 +32,7 @@ return {
             options = {
                 themable = true,
                 auto_toggle_bufferline = true,
-                mode = 'buffers', -- set to "tabs" to only show tabpages instead
+                mode = 'buffers',
                 diagnostics = 'nvim_lsp',
                 diagnostics_update_in_insert = false,
                 diagnostics_indicator = diagnostics_indicator,
