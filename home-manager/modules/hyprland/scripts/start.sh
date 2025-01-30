@@ -4,9 +4,9 @@
 
 SCRIPTS=$HOME/Configuration/home-manager/modules/hyprland/scripts
 
-dunst &
-udiskie &
 swww-daemon &
 waybar &
+dunst &
+udiskie &
 sh $SCRIPTS/slideshow.sh &
 sh $SCRIPTS/power-management.sh &
