@@ -2,6 +2,7 @@
 {
   fonts = {
     enableDefaultPackages = true;
+
     packages = with pkgs; [
       font-awesome
       noto-fonts

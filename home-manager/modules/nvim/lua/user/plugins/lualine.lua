@@ -21,7 +21,7 @@ return {
                             return vim.bo.filetype == 'NvimTree'
                         end,
                         fmt = function()
-                            return 'Explorer' -- This changes the title to "Explorer" when NvimTree is open
+                            return 'Explorer'
                         end,
                     },
                 },

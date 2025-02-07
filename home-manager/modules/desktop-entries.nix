@@ -6,6 +6,7 @@
       exec = ''sh -c "nvim ~/Configuration"'';
       terminal = true;
     };
+
     notes = {
       name = "Notes";
       genericName = "Notes";

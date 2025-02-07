@@ -14,11 +14,10 @@
 
       grub = {
         enable = true;
-
-        splashImage = null;
         device = "nodev";
         efiSupport = true;
         useOSProber = false;
+        splashImage = null;
 
         theme =
           pkgs.fetchFromGitHub {
@@ -44,7 +43,6 @@
           }
         '';
       };
-
     };
   };
 }

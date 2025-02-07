@@ -14,6 +14,10 @@ vim.opt.relativenumber = true
 vim.o.undofile = true
 vim.o.undodir = vim.fn.expand '~/.cache/nvim/undo'
 
+-- Windows
+vim.o.winfixwidth = true
+vim.o.winfixheight = true
+
 -- Miscellaneous
 vim.g.mapleader = ' '
 vim.o.pumheight = 40

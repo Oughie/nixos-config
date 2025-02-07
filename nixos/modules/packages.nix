@@ -2,7 +2,6 @@
 {
   nixpkgs.config = {
     allowUnfree = true;
-    android_sdk.accept_license = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -16,18 +15,11 @@
 
     # Development
 
-    # - Java
-    openjdk
-    maven
-    google-java-format
-    jdt-language-server
-
     # - Python
     python3
     isort
     python312Packages.black
     python312Packages.python-lsp-server
-    python312Packages.graphviz
 
     # - Lua
     stylua
@@ -44,9 +36,12 @@
     # - Rust
     rustup
 
-    # - JavaScript / TypeScript
+    # - TypeScript
     prettierd
     typescript-language-server
+
+    # - Miscellaneous
+    glsl_analyzer
 
     # Utils
     dhcpcd
@@ -57,16 +52,13 @@
     pipewire
     ripgrep
     swayidle
-    udiskie
-    udisks
-    usbutils
     wf-recorder
     zoxide
 
-    # - Compression
-    gnutar
-    unzip
-    zip
+    # - USB
+    udiskie
+    udisks
+    usbutils
 
     # Desktop
 

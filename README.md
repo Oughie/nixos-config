@@ -1,8 +1,8 @@
-# NixOS Configuration :snowflake:
+# Oughie's NixOS Configuration :cherry_blossom:
 
 [![Stars](https://img.shields.io/github/stars/Oughie/nixos-config)](https://github.com/Oughie/nixos-config/stargazers)
 
-Personal configuration for [Hyprland](https://hyprland.org/) on NixOS 25.05 (Warbler).
+Personal configuration for [Hyprland](https://hyprland.org/) on NixOS 25.05 (Warbler) :snowflake:
 
 ![Screenshot](public/presentation.png)
 

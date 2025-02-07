@@ -1,6 +1,7 @@
 return {
     'akinsho/bufferline.nvim',
     version = '*',
+    event = 'BufRead',
     dependencies = 'nvim-tree/nvim-web-devicons',
     config = function()
         local function diagnostics_indicator(_, _, diagnostics, _)

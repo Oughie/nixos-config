@@ -3,6 +3,7 @@
   programs.bat = {
     enable = true;
     config.theme = "catppuccinMocha";
+
     themes = {
       catppuccinMocha = {
         file = "themes/Catppuccin Mocha.tmTheme";

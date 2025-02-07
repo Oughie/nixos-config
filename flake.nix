@@ -23,12 +23,8 @@
 
         modules = [ ./home-manager ];
       };
-      nixosConfigurations = {
-        samoyed = nixpkgs.lib.nixosSystem {
-          modules = [
-            ./nixos
-          ];
-        };
+      nixosConfigurations.samoyed = nixpkgs.lib.nixosSystem {
+        modules = [ ./nixos ];
       };
     };
 }

@@ -30,10 +30,7 @@ vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', {})
 vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>', {})
 
 -- Plugin-specific
-local telescope = require 'telescope.builtin'
-local nvim_tree = require 'nvim-tree.api'
-
-vim.keymap.set('n', '<leader>f', telescope.find_files, {})
-vim.keymap.set('n', '<leader>st', telescope.live_grep, {})
-vim.keymap.set('n', '<leader>th', telescope.colorscheme, {})
-vim.keymap.set('n', '<leader>e', nvim_tree.tree.toggle, {})
+vim.keymap.set('n', '<leader>f', '<cmd>Telescope find_files<cr>', {})
+vim.keymap.set('n', '<leader>st', '<cmd>Telescope live_grep<cr>', {})
+vim.keymap.set('n', '<leader>th', '<cmd>Telescope colorscheme<cr>', {})
+vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', {})

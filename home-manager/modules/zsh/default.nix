@@ -17,9 +17,7 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [
-        "git"
-      ];
+      plugins = [ "git" ];
     };
 
     plugins = [
@@ -31,8 +29,8 @@
     ];
 
     shellAliases = {
-      clear = "printf '\\033[2J\\033[3J\\033[1;1H'";
       cat = "bat";
+      clear = "printf '\\033[2J\\033[3J\\033[1;1H'";
     };
   };
 }

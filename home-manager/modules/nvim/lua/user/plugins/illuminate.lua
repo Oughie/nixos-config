@@ -1,4 +1,1 @@
-return {
-    'RRethy/vim-illuminate',
-    event = 'BufEnter',
-}
+return 'RRethy/vim-illuminate'
