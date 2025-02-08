@@ -37,7 +37,11 @@ return {
         dashboard.section.buttons.val = {
             dashboard.button('f', '󰈞  Find File', '<cmd>Telescope find_files<cr>'),
             dashboard.button('t', '󰊄  Find Text', '<cmd>Telescope live_grep<cr>'),
-            dashboard.button('c', '  Configuration', '<cmd>edit $HOME/Configuration/home-manager/modules/nvim/<cr>'),
+            dashboard.button(
+                'c',
+                '  Configuration',
+                '<cmd>cd $HOME/Configuration/home-manager/modules/nvim/ | NvimTreeToggle <cr>'
+            ),
             dashboard.button('q', '󰅖  Quit', '<cmd>q<cr>'),
         }
 

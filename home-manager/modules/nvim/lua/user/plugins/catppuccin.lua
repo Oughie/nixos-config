@@ -1,6 +1,7 @@
 return {
     'catppuccin/nvim',
     name = 'catppuccin',
+    priority = 999,
     config = function()
         require('catppuccin').setup {
             custom_highlights = function(colors)
