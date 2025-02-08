@@ -1,3 +1,4 @@
+{ inputs, pkgs, ... }:
 {
   imports = [ ./modules ];
   wayland.windowManager.hyprland = {

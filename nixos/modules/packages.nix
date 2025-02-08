@@ -1,8 +1,6 @@
 { pkgs, ... }:
 {
-  nixpkgs.config = {
-    allowUnfree = true;
-  };
+  nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
     # Applications
@@ -15,12 +13,6 @@
 
     # Development
 
-    # - Python
-    python3
-    isort
-    python312Packages.black
-    python312Packages.python-lsp-server
-
     # - Lua
     stylua
     lua-language-server
@@ -29,19 +21,8 @@
     nil
     nixfmt-rfc-style
 
-    # - C
-    clang
-    clang-tools
-
     # - Rust
     rustup
-
-    # - TypeScript
-    prettierd
-    typescript-language-server
-
-    # - Miscellaneous
-    glsl_analyzer
 
     # Utils
     dhcpcd

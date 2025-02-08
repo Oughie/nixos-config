@@ -13,7 +13,19 @@ return {
                 },
             },
         }
-        lspconfig.clangd.setup {}
+        lspconfig.clangd.setup {
+            init_options = {
+                clangdFileStatus = true,
+                clangdSemanticHighlighting = true,
+            },
+            filetypes = { 'c', 'cpp', 'cxx', 'cc' },
+            cmd = {
+                'clangd',
+                '--background-index',
+                '--offset-encoding=utf-16',
+                '--compile-commands-dir=' .. vim.fn.getcwd() .. '/build',
+            },
+        }
         lspconfig.pylsp.setup {}
         lspconfig.glsl_analyzer.setup {}
         lspconfig.jdtls.setup {}

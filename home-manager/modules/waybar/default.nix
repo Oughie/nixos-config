@@ -20,6 +20,7 @@
 
       "custom/distro" = {
         format = "<span font='Hack Nerd Font' size='medium'></span>";
+        on-click = "kitty";
         tooltip = false;
       };
       "hyprland/workspaces" = {

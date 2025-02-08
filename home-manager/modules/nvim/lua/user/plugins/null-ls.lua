@@ -26,6 +26,12 @@ return {
                         '75',
                     },
                 },
+                formatting.clang_format.with {
+                    extra_args = {
+                        '--sort-includes',
+                        '--style="{BasedOnStyle: llvm, IndentWidth: 4}"',
+                    },
+                },
                 formatting.isort,
                 formatting.rustfmt,
                 formatting.nixfmt,

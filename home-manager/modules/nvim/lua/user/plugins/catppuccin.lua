@@ -5,6 +5,8 @@ return {
     config = function()
         require('catppuccin').setup {
             custom_highlights = function(colors)
+                local keyword = { bold = true, fg = colors.mauve }
+
                 return {
                     Keyword = { bold = true },
                     String = { italic = true },
@@ -18,19 +20,42 @@ return {
                     Repeat = { bold = true },
                     Special = { underline = true },
                     Error = { undercurl = true },
-                    javascriptStatement = { bold = true, fg = colors.mauve },
-                    javaStatement = { bold = true, fg = colors.mauve },
-                    javaExternal = { bold = true, fg = colors.mauve },
-                    pythonStatement = { bold = true, fg = colors.mauve },
-                    pythonInclude = { bold = true, fg = colors.mauve },
-                    pythonException = { bold = true, fg = colors.mauve },
-                    ['@keyword.function'] = { bold = true, fg = colors.mauve },
-                    ['@keyword.return'] = { bold = true, fg = colors.mauve },
+
+                    -- JavaScript
+                    javascriptStatement = keyword,
+
+                    -- Java
+                    javaStatement = keyword,
+                    javaExternal = keyword,
+
+                    -- Python
+                    pythonStatement = keyword,
+                    pythonInclude = keyword,
+                    pythonException = keyword,
+
+                    -- C/C++
+                    StorageClass = keyword,
+                    cppModifier = keyword,
+                    Statement = keyword,
+                    Structure = keyword,
+                    PreProc = { link = 'Macro' },
+                    Include = { link = 'Macro' },
+                    ['@lsp.mod.readonly.cpp'] = { bold = true, fg = colors.peach },
+                    ['@lsp.type.namespace.cpp'] = { fg = colors.yellow },
+                    ['@lsp.type.property.cpp'] = { fg = colors.red },
+
+                    -- Lua
                     ['@property.lua'] = { italic = true },
-                    ['@keyword.import.rust'] = { bold = true, fg = colors.mauve },
-                    ['@function.macro.rust'] = { bold = true, italic = true, fg = colors.teal },
                     ['@function.builtin.lua'] = { bold = true, fg = colors.peach },
+
+                    -- Rust
                     ['@lsp.type.const.rust'] = { bold = true, fg = colors.peach },
+                    ['@keyword.import.rust'] = keyword,
+                    ['@function.macro.rust'] = { bold = true, italic = true, fg = colors.teal },
+
+                    -- Miscellaneous
+                    ['@keyword.function'] = keyword,
+                    ['@keyword.return'] = keyword,
                 }
             end,
         }

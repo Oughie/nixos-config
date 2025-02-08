@@ -1,15 +1,23 @@
 return {
     'nvim-tree/nvim-tree.lua',
     version = '*',
-    cmd = 'NvimTreeToggle',
     dependencies = {
         'nvim-tree/nvim-web-devicons',
-        lazy = true,
     },
     config = function()
         require('nvim-tree').setup {
             filters = {
-                custom = { '*.git', '*.class', '*.lock', '*.lockb', 'package.json', 'target', 'node_modules' },
+                custom = {
+                    '*.git',
+                    '*.out',
+                    '*.exe',
+                    '*.class',
+                    '*.lock',
+                    '*.lockb',
+                    'package.json',
+                    'target',
+                    'node_modules',
+                },
             },
             update_focused_file = {
                 enable = true,
