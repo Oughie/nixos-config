@@ -8,7 +8,6 @@
     ./zsh
     ./bat.nix
     ./cava.nix
-    ./desktop-entries.nix
     ./dunst.nix
     ./eza.nix
     ./firefox.nix

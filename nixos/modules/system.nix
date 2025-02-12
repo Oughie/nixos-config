@@ -23,14 +23,14 @@
 
   systemd = {
     services.fix-wired-connection = {
-      description = "Fix wired connection after resuming from hibernation";
+      description = "Fix wired connection after hibernation";
       wantedBy = [
         "hibernate.target"
-        "suspend.target"
+        # "suspend.target"
       ];
       after = [
         "hibernate.target"
-        "suspend.target"
+        # "suspend.target"
       ];
       serviceConfig = {
         Type = "oneshot";
@@ -40,6 +40,7 @@
         RemainAfterExit = true;
       };
     };
+
     sleep.extraConfig = ''
       HibernateDelaySec=10m
       SuspendState=mem
