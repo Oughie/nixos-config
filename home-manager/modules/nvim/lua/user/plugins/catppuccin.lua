@@ -34,10 +34,11 @@ return {
                     pythonException = keyword,
 
                     -- C/C++
-                    StorageClass = keyword,
+                    cStorageClass = keyword,
                     cppModifier = keyword,
                     Statement = keyword,
                     Structure = keyword,
+                    Exception = keyword,
                     PreProc = { link = 'Macro' },
                     Include = { link = 'Macro' },
                     ['@lsp.mod.readonly.cpp'] = { bold = true, fg = colors.peach },

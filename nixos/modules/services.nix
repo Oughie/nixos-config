@@ -2,8 +2,6 @@
 {
   services = {
     dbus.enable = true;
-    flatpak.enable = true;
-    gvfs.enable = true;
     udisks2.enable = true;
 
     avahi = {

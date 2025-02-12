@@ -23,6 +23,7 @@
 
         modules = [ ./home-manager ];
       };
+
       nixosConfigurations.samoyed = nixpkgs.lib.nixosSystem {
         modules = [ ./nixos ];
       };

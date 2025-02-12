@@ -26,3 +26,28 @@ vim.opt.fillchars = { eob = ' ' }
 vim.opt.mouse = ''
 vim.opt.termguicolors = true
 vim.lsp.inlay_hint.enable(true)
+
+local plugins = {
+    'gzip',
+    'zip',
+    'zipPlugin',
+    'tar',
+    'tarPlugin',
+    'getscript',
+    'getscriptPlugin',
+    'vimball',
+    'vimballPlugin',
+    '2html_plugin',
+    'matchit',
+    -- 'matchparen',
+    'logiPat',
+    'rrhelper',
+    'netrw',
+    'netrwPlugin',
+    'netrwSettings',
+    'netrwFileHandlers',
+}
+
+for i = 1, #plugins do
+    vim.g['loaded_' .. plugins[i]] = true
+end

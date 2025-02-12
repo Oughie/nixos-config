@@ -1,7 +1,7 @@
 {
   wayland.windowManager.hyprland.settings.animations = {
     enabled = true;
-    bezier = "myBezier, 0.075, 0.65, 0.075, 1.045";
+    bezier = "myBezier, 0.075, 0.7, 0.075, 1.05";
 
     animation = [
       "windows, 1, 7, myBezier"

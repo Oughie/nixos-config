@@ -1,14 +1,12 @@
 { pkgs, ... }:
 {
-  imports = [
-    ./modules
-  ];
-
+  imports = [ ./modules ];
   programs.home-manager.enable = true;
 
   home = {
     username = "luma";
     homeDirectory = "/home/luma";
+    shell.enableZshIntegration = true;
 
     pointerCursor = {
       gtk.enable = true;

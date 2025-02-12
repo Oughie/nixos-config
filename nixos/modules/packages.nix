@@ -5,7 +5,6 @@
   environment.systemPackages = with pkgs; [
     # Applications
     prismlauncher
-    vlc
     kitty
     sxiv
     discord
@@ -25,15 +24,18 @@
     rustup
 
     # Utils
-    dhcpcd
+
+    # - Grep
     fzf
+    ripgrep
+
+    # - Miscellaneous
+    dhcpcd
     home-manager
     libinput
     libnotify
     pipewire
-    ripgrep
     swayidle
-    wf-recorder
     zoxide
 
     # - USB
@@ -43,17 +45,18 @@
 
     # Desktop
 
-    # - Clipboard
-    cliphist
-    wl-clipboard
-
     # - Hyprland
     catppuccin-cursors.mochaFlamingo
     hyprpicker
     hyprshot
     swww
+    wf-recorder
 
-    # Display Manager
+    # - Clipboard
+    cliphist
+    wl-clipboard
+
+    # - Display Manager
     (catppuccin-sddm.override {
       flavor = "mocha";
       font = "Noto Sans";
