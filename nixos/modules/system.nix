@@ -22,25 +22,6 @@
   };
 
   systemd = {
-    services.fix-wired-connection = {
-      description = "Fix wired connection after hibernation";
-      wantedBy = [
-        "hibernate.target"
-        # "suspend.target"
-      ];
-      after = [
-        "hibernate.target"
-        # "suspend.target"
-      ];
-      serviceConfig = {
-        Type = "oneshot";
-        ExecStart = [
-          "/run/current-system/sw/bin/nmcli networking off ; /run/current-system/sw/bin/nmcli networking on"
-        ];
-        RemainAfterExit = true;
-      };
-    };
-
     sleep.extraConfig = ''
       HibernateDelaySec=10m
       SuspendState=mem

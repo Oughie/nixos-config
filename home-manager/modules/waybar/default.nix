@@ -24,7 +24,7 @@
 
       "custom/distro" = {
         format = "<span font='Hack Nerd Font' size='medium'></span>";
-        on-click = "kitty";
+        on-click = "nmcli networking off; nmcli networking on";
         tooltip = false;
       };
 
