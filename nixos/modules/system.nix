@@ -5,9 +5,12 @@
     NIXOS_OZONE_WL = "1";
   };
 
-  hardware.graphics = {
-    enable = true;
-    extraPackages = [ pkgs.amdvlk ];
+  hardware = {
+    cpu.amd.updateMicrocode = true;
+    graphics = {
+      enable = true;
+      extraPackages = [ pkgs.amdvlk ];
+    };
   };
 
   networking = {

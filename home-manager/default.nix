@@ -10,8 +10,8 @@
 
     pointerCursor = {
       gtk.enable = true;
-      package = pkgs.catppuccin-cursors.mochaFlamingo;
       name = "catppuccin-mocha-flamingo-cursors";
+      package = pkgs.catppuccin-cursors.mochaFlamingo;
       size = 24;
     };
 

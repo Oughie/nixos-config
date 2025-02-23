@@ -5,6 +5,7 @@ return {
     require 'user.plugins.catppuccin',
     require 'user.plugins.cmp',
     require 'user.plugins.crates',
+    require 'user.plugins.emoji',
     require 'user.plugins.illuminate',
     require 'user.plugins.inlay-hint',
     require 'user.plugins.lspconfig',
@@ -15,4 +16,5 @@ return {
     require 'user.plugins.rustacean',
     require 'user.plugins.telescope',
     require 'user.plugins.treesitter',
+    require 'user.plugins.web-devicons',
 }

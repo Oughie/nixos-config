@@ -29,34 +29,29 @@
     fzf
     ripgrep
 
-    # - Miscellaneous
-    dhcpcd
-    home-manager
-    libinput
-    libnotify
-    pipewire
-    swayidle
-    zoxide
-
     # - USB
     udiskie
     udisks
     usbutils
 
-    # Desktop
+    # - Miscellaneous
+    dhcpcd
+    home-manager
+    libnotify
+    pipewire
+    swayidle
+    zoxide
 
-    # - Hyprland
+    # Desktop
     catppuccin-cursors.mochaFlamingo
     hyprpicker
     hyprshot
     swww
     wf-recorder
-
-    # - Clipboard
     cliphist
     wl-clipboard
 
-    # - Display Manager
+    # Display Manager
     (catppuccin-sddm.override {
       flavor = "mocha";
       font = "Noto Sans";

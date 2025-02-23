@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   boot = {
+    initrd.kernelModules = [ "amdgpu" ];
     kernelPackages = pkgs.linuxPackages_latest;
     kernelParams = [ "mem_sleep_default=deep" ];
 

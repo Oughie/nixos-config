@@ -2,6 +2,7 @@
 {
   services = {
     dbus.enable = true;
+    libinput.enable = true;
     udisks2.enable = true;
 
     avahi = {
@@ -31,6 +32,7 @@
     xserver = {
       enable = true;
       excludePackages = [ pkgs.xterm ];
+      videoDrivers = [ "amdgpu" ];
 
       xkb = {
         layout = "de";
