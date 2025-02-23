@@ -1,4 +1,4 @@
-# Oughie's NixOS Configuration 🌸
+# Oughie's NixOS Configuration :cherry_blossom:
 
 [![Stars](https://img.shields.io/github/stars/Oughie/nixos-config)](https://github.com/Oughie/nixos-config/stargazers)
 
@@ -10,13 +10,13 @@ Personal configuration for Hyprland on NixOS 25.05 (Warbler) :snowflake:
 
 ## Table of Contents
 
-- [Setup](setup)
-- [Installation](installation)
-- [Key Bindings](key-bindings)
-  - [Applications](applications)
-  - [Windows](windows)
-  - [Workspaces](workspaces)
-- [Credits](credits)
+- [Setup](#setup)
+- [Installation](#installation)
+- [Keybindings](#keybindings)
+  - [Applications](#applications)
+  - [Windows](#windows)
+  - [Workspaces](#workspaces)
+- [Credits](#credits)
 
 ## Setup
 
@@ -100,4 +100,4 @@ While holding <kbd>Super</kbd>, you can also move the window via left-click or r
 
 ## Credits
 
-The wallpapers were taken from another repository that can be found [here](https://github.com/orxngc/walls-catppuccin-mocha). ❤️
+The wallpapers were taken from another repository that can be found [here](https://github.com/orxngc/walls-catppuccin-mocha). :heart:
