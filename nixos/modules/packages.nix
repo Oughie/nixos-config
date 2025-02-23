@@ -50,14 +50,5 @@
     wf-recorder
     cliphist
     wl-clipboard
-
-    # Display Manager
-    (catppuccin-sddm.override {
-      flavor = "mocha";
-      font = "Noto Sans";
-      fontSize = "9";
-      background = "${../assets/wallpaper.png}";
-      loginBackground = true;
-    })
   ];
 }

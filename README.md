@@ -2,7 +2,7 @@
 
 [![Stars](https://img.shields.io/github/stars/Oughie/nixos-config)](https://github.com/Oughie/nixos-config/stargazers)
 
-Personal configuration for Hyprland on NixOS 25.05 (Warbler) :snowflake:
+Personal configuration for Hyprland on NixOS 25.05 :snowflake:
 
 ![Screenshot](public/presentation.png)
 
@@ -94,9 +94,9 @@ While holding <kbd>Super</kbd>, you can also move the window via left-click or r
 
 | Shortcut                                                 | Action                       |
 | -------------------------------------------------------- | ---------------------------- |
-| <kbd>Super</kbd> + <kbd>1 ... 5</kbd>                    | Switch to nth workspace      |
+| <kbd>Super</kbd> + <kbd>1 .. 5</kbd>                    | Switch to nth workspace      |
 | <kbd>Super</kbd> + <kbd>Tab</kbd>                        | Switch to previous workspace |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>1 ... 5</kbd> | Move window to nth workspace |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>1 .. 5</kbd> | Move window to nth workspace |
 
 ## Credits
 
