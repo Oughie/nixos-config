@@ -34,8 +34,8 @@ Personal configuration for Hyprland on NixOS 25.05 :snowflake:
 The list of additionally installed package can be viewed [here](nixos/modules/packages.nix).
 
 > [!WARNING]
-> The locale, keyboard layout as well as some keybindings are configured for German use cases.  
-> You may have to adjust them accordingly.
+> This configuration is intended for personal use.
+> The locale, drivers as well as other things may need to be adjusted for personal preferences.
 
 ## Installation
 

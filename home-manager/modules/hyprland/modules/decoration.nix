@@ -4,14 +4,14 @@
 
     blur = {
       enabled = true;
-      size = 15;
       passes = 3;
+      size = 10;
     };
 
     shadow = {
+      color = "rgba(1e1e2e8a)";
       range = 20;
       render_power = 3;
-      color = "rgba(1e1e2e8a)";
     };
   };
 }

@@ -8,9 +8,10 @@ vim.keymap.set('t', '<C-j>', [[<C-\><C-n><C-w>j]], {})
 vim.keymap.set('t', '<C-k>', [[<C-\><C-n><C-w>k]], {})
 vim.keymap.set('t', '<C-l>', [[<C-\><C-n><C-w>l]], {})
 
--- Buffer navigation
+-- Buffer management
 vim.keymap.set('n', '<Tab>', '<cmd>bnext<cr>', {})
 vim.keymap.set('n', '<S-Tab>', '<cmd>bprevious<cr>', {})
+vim.keymap.set('n', '<leader>bd', '<cmd>bufdo bd<cr>', {})
 
 -- Window resizing
 vim.keymap.set('n', 'ß', '<cmd>horizontal resize +1<cr>', {})
@@ -33,4 +34,5 @@ vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>', {})
 vim.keymap.set('n', '<leader>f', '<cmd>Telescope find_files<cr>', {})
 vim.keymap.set('n', '<leader>st', '<cmd>Telescope live_grep<cr>', {})
 vim.keymap.set('n', '<leader>th', '<cmd>Telescope colorscheme<cr>', {})
+vim.keymap.set('n', '<leader>sr', '<cmd>Telescope resume<cr>', {})
 vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', {})

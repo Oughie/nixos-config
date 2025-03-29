@@ -1,5 +1,5 @@
 return {
-    'jose-elias-alvarez/null-ls.nvim',
+    'nvimtools/none-ls.nvim',
     event = 'LspAttach',
     enable = false,
     config = function()
@@ -9,6 +9,7 @@ return {
 
         null_ls.setup {
             sources = {
+                -- Lua
                 formatting.stylua.with {
                     extra_args = {
                         '--indent-type',
@@ -19,6 +20,12 @@ return {
                         'AutoPreferSingle',
                     },
                 },
+
+                -- Nix
+                formatting.nixfmt,
+
+                -- Python
+                formatting.isort,
                 formatting.black.with {
                     extra_args = {
                         '--skip-string-normalization',
@@ -26,15 +33,16 @@ return {
                         '75',
                     },
                 },
+
+                -- C / C++
                 formatting.clang_format.with {
                     extra_args = {
                         '--sort-includes',
                         '--style="{BasedOnStyle: llvm, IndentWidth: 4}"',
                     },
                 },
-                formatting.isort,
-                formatting.rustfmt,
-                formatting.nixfmt,
+
+                -- JavaScript / TypeScript
                 formatting.prettierd,
             },
             on_attach = function(client, bufnr)
@@ -53,5 +61,15 @@ return {
                 end
             end,
         }
+
+        -- Rust
+        vim.api.nvim_create_augroup('rustfmt', { clear = true })
+        vim.api.nvim_create_autocmd('BufWritePre', {
+            pattern = '*.rs',
+            group = 'rustfmt',
+            callback = function()
+                vim.lsp.buf.format { async = false }
+            end,
+        })
     end,
 }

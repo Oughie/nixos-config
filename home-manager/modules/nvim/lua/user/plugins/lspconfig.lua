@@ -4,6 +4,7 @@ return {
     config = function()
         local lspconfig = require 'lspconfig'
 
+        -- Lua
         lspconfig.lua_ls.setup {
             settings = {
                 Lua = {
@@ -13,6 +14,11 @@ return {
                 },
             },
         }
+
+        -- Nix
+        lspconfig.nil_ls.setup {}
+
+        -- C / C++
         lspconfig.clangd.setup {
             init_options = {
                 clangdFileStatus = true,
@@ -26,15 +32,22 @@ return {
                 '--compile-commands-dir=' .. vim.fn.getcwd() .. '/build',
             },
         }
+
+        -- Python
         lspconfig.pylsp.setup {}
-        lspconfig.glsl_analyzer.setup {}
+
+        -- Java
         lspconfig.jdtls.setup {}
-        lspconfig.nil_ls.setup {}
+
+        -- JavaScript / TypeScript
         lspconfig.ts_ls.setup {}
 
+        -- Zig
         lspconfig.zls.setup {}
         vim.cmd.let 'g:zig_fmt_autosave = 0'
 
+        -- GLSL
+        lspconfig.glsl_analyzer.setup {}
         vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {
             pattern = '*.glsl',
             callback = function(args)

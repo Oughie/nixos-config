@@ -22,6 +22,10 @@
   powerManagement = {
     enable = true;
     cpuFreqGovernor = "performance";
+    resumeCommands = ''
+      /run/current-system/sw/bin/nmcli networking off
+      /run/current-system/sw/bin/nmcli networking on
+    '';
   };
 
   systemd = {

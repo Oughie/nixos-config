@@ -7,6 +7,7 @@
       "fullscreen.autohide" = false;
       "translations.neverTranslateLanguages" = "de";
       "aboutConfig.showWarning" = false;
+      "browser.uidensity" = 1;
       "newtabpage.activity-stream.showSponsoredTopSites" = false;
 
       "newtabpage.pinned" = [

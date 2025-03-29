@@ -3,6 +3,7 @@
     ./btop
     ./fastfetch
     ./hyprland
+    ./kitty
     ./nvim
     ./waybar
     ./zsh
@@ -12,8 +13,8 @@
     ./eza.nix
     ./firefox.nix
     ./git.nix
-    ./kitty.nix
     ./rofi.nix
+    ./udiskie.nix
     ./xdg.nix
   ];
 }

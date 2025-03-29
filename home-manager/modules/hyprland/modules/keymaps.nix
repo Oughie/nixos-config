@@ -46,5 +46,9 @@
       "SUPER, mouse:272, movewindow"
       "SUPER, mouse:273, resizewindow"
     ];
+
+    binds = {
+      movefocus_cycles_fullscreen = 1;
+    };
   };
 }

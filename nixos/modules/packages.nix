@@ -9,6 +9,17 @@
     sxiv
     discord
     libreoffice
+    obsidian
+
+    # Desktop
+    catppuccin-cursors.mochaFlamingo
+    cliphist
+    hyprpicker
+    hyprshot
+    papirus-icon-theme
+    swww
+    wf-recorder
+    wl-clipboard
 
     # Development
 
@@ -20,35 +31,19 @@
     nil
     nixfmt-rfc-style
 
-    # - Rust
-    rustup
-
     # Utils
 
     # - Grep
     fzf
     ripgrep
 
-    # - USB
-    udiskie
-    udisks
-    usbutils
-
     # - Miscellaneous
     dhcpcd
     home-manager
     libnotify
+    libva
     pipewire
     swayidle
     zoxide
-
-    # Desktop
-    catppuccin-cursors.mochaFlamingo
-    hyprpicker
-    hyprshot
-    swww
-    wf-recorder
-    cliphist
-    wl-clipboard
   ];
 }
