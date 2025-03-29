@@ -27,6 +27,12 @@ vim.opt.mouse = ''
 vim.opt.termguicolors = true
 vim.lsp.inlay_hint.enable(true)
 
+-- Enable virtual text
+vim.diagnostic.config {
+    virtual_text = true,
+}
+
+-- Disable builtin plugins
 local plugins = {
     'gzip',
     'zip',

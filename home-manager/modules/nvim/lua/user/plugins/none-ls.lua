@@ -61,15 +61,5 @@ return {
                 end
             end,
         }
-
-        -- Rust
-        vim.api.nvim_create_augroup('rustfmt', { clear = true })
-        vim.api.nvim_create_autocmd('BufWritePre', {
-            pattern = '*.rs',
-            group = 'rustfmt',
-            callback = function()
-                vim.lsp.buf.format { async = false }
-            end,
-        })
     end,
 }
