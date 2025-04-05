@@ -9,7 +9,6 @@
     sxiv
     discord
     libreoffice
-    obsidian
 
     # Desktop
     catppuccin-cursors.mochaFlamingo
