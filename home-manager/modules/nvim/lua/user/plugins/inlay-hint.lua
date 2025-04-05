@@ -1,5 +1,8 @@
 return {
     'felpafel/inlay-hint.nvim',
     event = 'LspAttach',
-    config = true,
+    config = function()
+        require('inlay-hint').setup()
+        vim.lsp.inlay_hint.enable(true)
+    end,
 }

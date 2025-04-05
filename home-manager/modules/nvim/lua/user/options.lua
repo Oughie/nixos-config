@@ -25,7 +25,6 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.fillchars = { eob = ' ' }
 vim.opt.mouse = ''
 vim.opt.termguicolors = true
-vim.lsp.inlay_hint.enable(true)
 
 -- Enable virtual text
 vim.diagnostic.config {
