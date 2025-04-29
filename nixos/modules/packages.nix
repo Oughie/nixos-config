@@ -6,9 +6,10 @@
     # Applications
     prismlauncher
     kitty
-    sxiv
     discord
     libreoffice
+    nautilus
+    eog
 
     # Desktop
     catppuccin-cursors.mochaFlamingo
@@ -38,6 +39,7 @@
 
     # - Miscellaneous
     dhcpcd
+    ethtool
     home-manager
     libnotify
     libva

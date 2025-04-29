@@ -5,7 +5,6 @@ return {
     require 'user.plugins.catppuccin',
     require 'user.plugins.cmp',
     require 'user.plugins.crates',
-    require 'user.plugins.haskell-tools',
     require 'user.plugins.illuminate',
     require 'user.plugins.inlay-hint',
     require 'user.plugins.lspconfig',

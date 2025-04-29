@@ -1,8 +1,9 @@
 {
   wayland.windowManager.hyprland.settings.input = {
     follow_mouse = 1;
-    kb_layout = "de";
+    kb_layout = "de,ru";
     kb_variant = "nodeadkeys";
+    kb_options = "grp:alt_shift_toggle";
     sensitivity = 0.4;
   };
 }

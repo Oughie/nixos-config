@@ -14,7 +14,7 @@ vim.opt.relativenumber = true
 vim.o.undofile = true
 vim.o.undodir = vim.fn.expand '~/.cache/nvim/undo'
 
--- Windows
+-- Window dimensions
 vim.o.winfixwidth = true
 vim.o.winfixheight = true
 
@@ -26,9 +26,21 @@ vim.opt.fillchars = { eob = ' ' }
 vim.opt.mouse = ''
 vim.opt.termguicolors = true
 
--- Enable virtual text
+-- Virtual text
 vim.diagnostic.config {
-    virtual_text = true,
+    virtual_text = {
+        prefix = function(diagnostic)
+            if diagnostic.severity == vim.diagnostic.severity.ERROR then
+                return ''
+            elseif diagnostic.severity == vim.diagnostic.severity.WARN then
+                return ''
+            elseif diagnostic.severity == vim.diagnostic.severity.INFO then
+                return ''
+            else
+                return ''
+            end
+        end,
+    },
 }
 
 -- Disable builtin plugins

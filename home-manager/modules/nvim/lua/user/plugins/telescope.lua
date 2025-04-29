@@ -13,10 +13,10 @@ return {
                 file_ignore_patterns = {
                     '%.lock',
                     'build/',
-                    'node_modules',
+                    'node_modules/',
                     'package.json',
-                    'gen',
-                    'target',
+                    'gen/',
+                    'target/',
                     '%.svg',
                     'package%-lock%.json',
                 },

@@ -18,7 +18,6 @@ return {
                     Constant = { bold = true },
                     Label = { bold = true },
                     Repeat = { bold = true },
-                    Special = { underline = true },
                     Error = { undercurl = true },
 
                     -- JavaScript

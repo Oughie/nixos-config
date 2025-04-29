@@ -9,6 +9,7 @@
     ./zsh
     ./bat.nix
     ./cava.nix
+    ./clock-rs.nix
     ./dunst.nix
     ./eza.nix
     ./firefox.nix

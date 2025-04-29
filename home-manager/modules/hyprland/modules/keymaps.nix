@@ -30,9 +30,9 @@
       "SUPER SHIFT, 4, movetoworkspace, 4"
       "SUPER SHIFT, 5, movetoworkspace, 5"
 
-      "SUPER, D, exec, sh ~/Configuration/home-manager/modules/hyprland/scripts/rofi.sh"
-      "SUPER SHIFT, S, exec, sh ~/Configuration/home-manager/modules/hyprland/scripts/screenshot.sh"
-      "SUPER SHIFT, C, exec, sh ~/Configuration/home-manager/modules/hyprland/scripts/color-picker.sh"
+      "SUPER, D, exec, rofi -show drun"
+      "SUPER SHIFT, S, exec, hyprshot -m region -f ~/Pictures/Screenshots/$(date +%H-%M-%S-%m-%Y).png"
+      "SUPER SHIFT, C, exec, hyprpicker | wl-copy"
     ];
 
     binde = [
@@ -47,8 +47,6 @@
       "SUPER, mouse:273, resizewindow"
     ];
 
-    binds = {
-      movefocus_cycles_fullscreen = 1;
-    };
+    binds.movefocus_cycles_fullscreen = 1;
   };
 }

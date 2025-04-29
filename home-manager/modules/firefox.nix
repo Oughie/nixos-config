@@ -9,7 +9,6 @@
       "aboutConfig.showWarning" = false;
       "browser.uidensity" = 1;
       "newtabpage.activity-stream.showSponsoredTopSites" = false;
-
       "newtabpage.pinned" = [
         {
           label = "GitHub";
