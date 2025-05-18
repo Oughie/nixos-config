@@ -3,6 +3,7 @@
   documentation.nixos.enable = false;
 
   programs = {
+    steam.enable = true;
     zsh.enable = true;
     hyprland = {
       enable = true;
@@ -18,6 +19,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "lp"
     ];
   };
 }

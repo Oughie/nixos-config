@@ -46,6 +46,15 @@ return {
         lspconfig.zls.setup {}
         vim.cmd.let 'g:zig_fmt_autosave = 0'
 
+        -- Svelte
+        lspconfig.svelte.setup {}
+        vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {
+            pattern = { '*.svelte' },
+            callback = function(args)
+                vim.treesitter.start(args.buf, 'svelte')
+            end,
+        })
+
         -- GLSL
         lspconfig.glsl_analyzer.setup {}
         vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {

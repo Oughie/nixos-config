@@ -31,7 +31,7 @@
       "SUPER SHIFT, 5, movetoworkspace, 5"
 
       "SUPER, D, exec, rofi -show drun"
-      "SUPER SHIFT, S, exec, hyprshot -m region -f ~/Pictures/Screenshots/$(date +%H-%M-%S-%m-%Y).png"
+      "SUPER SHIFT, S, exec, hyprshot -m region -f Pictures/Screenshots/$(date +%H-%M-%S-%m-%Y).png"
       "SUPER SHIFT, C, exec, hyprpicker | wl-copy"
     ];
 

@@ -31,6 +31,8 @@
       wireplumber.enable = true;
     };
 
+    printing.enable = true;
+
     xserver = {
       enable = true;
       excludePackages = [ pkgs.xterm ];

@@ -7,6 +7,7 @@
 
   hardware = {
     cpu.amd.updateMicrocode = true;
+
     graphics = {
       enable = true;
       extraPackages = [ pkgs.amdvlk ];
@@ -28,12 +29,10 @@
     '';
   };
 
-  systemd = {
-    sleep.extraConfig = ''
-      HibernateDelaySec=10m
-      SuspendState=mem
-    '';
-  };
+  systemd.sleep.extraConfig = ''
+    HibernateDelaySec=10m
+    SuspendState=mem
+  '';
 
   security.rtkit.enable = true;
   system.stateVersion = "24.05";

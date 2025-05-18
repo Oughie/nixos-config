@@ -6,13 +6,13 @@ in
   programs.rofi = {
     enable = true;
     package = pkgs.rofi-wayland;
-    font = "Noto Sans Medium 11";
+    font = "JetBrainsMono Nerd Font Propo Medium 11";
 
     theme = {
       configuration = {
-        display-drun = "Applications:";
-        display-window = "Windows:";
-        display-run = "Execute:";
+        display-drun = "  ";
+        display-window = "  ";
+        display-run = "  ";
         drun-display-format = "{icon}  {name}";
         modi = "window,run,drun";
         show-icons = true;
@@ -22,7 +22,7 @@ in
       "*" = {
         "bg-col" = mkLiteral "#313244";
         "bg-col-light" = mkLiteral "#313244";
-        "border-col" = mkLiteral "#f2cdcd91";
+        "border-col" = mkLiteral "#f2cdcd61";
         "selected-col" = mkLiteral "#45475a";
         "primary" = mkLiteral "#f2cdcd";
         "fg-col" = mkLiteral "#c6d0f5";
@@ -30,7 +30,6 @@ in
         "grey" = mkLiteral "#737994";
 
         "width" = 600;
-        "font" = "Noto Sans 11";
       };
 
       "element-text, element-icon, mode-switcher" = {
@@ -43,7 +42,7 @@ in
         border-color = mkLiteral "@border-col";
         background-color = mkLiteral "@bg-col";
         border = mkLiteral "6px";
-        border-radius = mkLiteral "15px";
+        border-radius = mkLiteral "20px";
       };
 
       mainbox = {
@@ -85,7 +84,7 @@ in
         margin = mkLiteral "5px 0px 5px 0px";
         background-color = mkLiteral "@bg-col";
         text-color = mkLiteral "@fg-col";
-        border-radius = mkLiteral "15px";
+        border-radius = mkLiteral "20px";
       };
 
       element-icon = {
@@ -96,9 +95,7 @@ in
         background-color = mkLiteral "@selected-col";
       };
 
-      mode-switcher = {
-        spacing = 0;
-      };
+      mode-switcher.spacing = 0;
 
       button = {
         padding = mkLiteral "10px";
@@ -116,7 +113,7 @@ in
         background-color = mkLiteral "@bg-col-light";
         margin = mkLiteral "2px";
         padding = mkLiteral "2px";
-        border-radius = mkLiteral "5px";
+        border-radius = mkLiteral "20px";
       };
 
       textbox = {

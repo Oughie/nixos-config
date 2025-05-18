@@ -16,7 +16,7 @@
     cliphist
     hyprpicker
     hyprshot
-    papirus-icon-theme
+    adwaita-icon-theme
     swww
     wf-recorder
     wl-clipboard
