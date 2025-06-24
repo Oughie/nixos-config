@@ -22,6 +22,8 @@
       "SUPER, 4, workspace, 4"
       "SUPER, 5, workspace, 5"
 
+      "SUPER, N, cyclenext"
+      "SUPER, M, cyclenext,prev"
       "SUPER, TAB, workspace, previous"
 
       "SUPER SHIFT, 1, movetoworkspace, 1"

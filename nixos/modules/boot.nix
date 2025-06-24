@@ -39,6 +39,31 @@
               fi
           fi
 
+          menuentry 'Windows Boot Manager' --class windows --class os $menuentry_id_option 'osprober-efi-120E-21CF' {
+              insmod part_gpt
+              insmod fat
+              search --no-floppy --fs-uuid --set=root 120E-21CF
+              chainloader /efi/Microsoft/Boot/bootmgfw.efi
+          }
+
+          menuentry 'Arch Linux' --class arch --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-simple-035fe2f1-edc7-4fa2-bbd2-afbfcf32c2eb' {
+              insmod part_gpt
+              insmod ext2
+              search --no-floppy --fs-uuid --set=root 035fe2f1-edc7-4fa2-bbd2-afbfcf32c2eb
+              linux /boot/vmlinuz-linux root=/dev/nvme0n1p7
+              initrd /boot/initramfs-linux.img
+          }
+
+          submenu 'Advanced options for Arch Linux' $menuentry_id_option 'osprober-gnulinux-advanced-035fe2f1-edc7-4fa2-bbd2-afbfcf32c2eb' {
+              menuentry 'Arch Linux (on /dev/nvme0n1p7)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-linux--035fe2f1-edc7-4fa2-bbd2-afbfcf32c2eb' {
+                  insmod part_gpt
+                  insmod ext2
+                  search --no-floppy --fs-uuid --set=root 035fe2f1-edc7-4fa2-bbd2-afbfcf32c2eb
+                  linux /boot/vmlinuz-linux root=/dev/nvme0n1p7
+                  initrd /boot/initramfs-linux.img
+              }
+          }
+
           menuentry "Shutdown" {
               halt
           }

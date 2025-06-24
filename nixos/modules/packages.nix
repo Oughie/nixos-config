@@ -12,11 +12,12 @@
     eog
 
     # Desktop
+    adwaita-icon-theme
+    appimage-run
     catppuccin-cursors.mochaFlamingo
     cliphist
     hyprpicker
     hyprshot
-    adwaita-icon-theme
     swww
     wf-recorder
     wl-clipboard
@@ -45,6 +46,7 @@
     libva
     pipewire
     swayidle
+    unzip
     zoxide
   ];
 }

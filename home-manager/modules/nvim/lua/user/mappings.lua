@@ -32,6 +32,9 @@ vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, {})
 vim.keymap.set('n', '<leader>r', function()
     vim.diagnostic.goto_next { float = false }
 end, {})
+vim.keymap.set('n', '<leader>R', function()
+    vim.diagnostic.goto_prev { float = false }
+end, {})
 
 -- Plugin-specific
 local telescope = require 'telescope.builtin'
