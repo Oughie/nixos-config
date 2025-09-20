@@ -4,12 +4,12 @@
 
   environment.systemPackages = with pkgs; [
     # Applications
-    prismlauncher
-    kitty
     discord
+    eog
+    kitty
     libreoffice
     nautilus
-    eog
+    prismlauncher
 
     # Desktop
     adwaita-icon-theme
@@ -17,7 +17,6 @@
     catppuccin-cursors.mochaFlamingo
     cliphist
     hyprpicker
-    hyprshot
     swww
     wf-recorder
     wl-clipboard

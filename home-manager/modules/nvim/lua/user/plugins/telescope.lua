@@ -12,11 +12,11 @@ return {
             defaults = {
                 file_ignore_patterns = {
                     '%.lock',
-                    'build/',
-                    'node_modules/',
-                    'package.json',
-                    'gen/',
-                    'target/',
+                    '/build/',
+                    '/node_modules/',
+                    '/package.json',
+                    '/gen/',
+                    '/target/',
                     '%.svg',
                     'package%-lock%.json',
                 },

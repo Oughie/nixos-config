@@ -2,13 +2,13 @@
   nix = {
     gc = {
       automatic = true;
-      dates = "daily";
+      dates = "monthly";
       options = "--delete-older-than +10d";
     };
 
     optimise = {
       automatic = true;
-      dates = [ "daily" ];
+      dates = [ "weekly" ];
     };
 
     settings = {

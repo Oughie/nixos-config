@@ -14,6 +14,7 @@
     ./eza.nix
     ./firefox.nix
     ./git.nix
+    ./hyprshot.nix
     ./rofi.nix
     ./udiskie.nix
     ./xdg.nix

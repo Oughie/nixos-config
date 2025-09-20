@@ -44,6 +44,9 @@ return {
 
                 -- JavaScript / TypeScript
                 formatting.prettierd,
+
+                -- Golang
+                formatting.gofmt,
             },
             on_attach = function(client, bufnr)
                 if client.supports_method 'textDocument/formatting' then

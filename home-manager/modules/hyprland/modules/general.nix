@@ -3,7 +3,8 @@
     allow_tearing = false;
     border_size = 6;
     gaps_in = 10;
-    gaps_out = 80;
+    gaps_out = 40;
+
     layout = "dwindle";
     resize_on_border = true;
 

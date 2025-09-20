@@ -42,6 +42,9 @@ return {
         -- JavaScript / TypeScript
         lspconfig.ts_ls.setup {}
 
+        -- Golang
+        lspconfig.gopls.setup {}
+
         -- Zig
         lspconfig.zls.setup {}
         vim.cmd.let 'g:zig_fmt_autosave = 0'
@@ -61,6 +64,15 @@ return {
             pattern = '*.glsl',
             callback = function(args)
                 vim.treesitter.start(args.buf, 'glsl')
+            end,
+        })
+
+        -- WGSL
+        lspconfig.wgsl_analyzer.setup {}
+        vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {
+            pattern = '*.wgsl',
+            callback = function(args)
+                vim.treesitter.start(args.buf, 'wgsl')
             end,
         })
     end,
